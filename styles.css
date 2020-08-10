@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(132, 189, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 100vw;
+    text-align: center;
+    position: relative;
+}
+
+.header-text-1,
+.header-text-2 {
+    font-size: 1.8rem;
+}
+
+.container1 {
+    position: relative;
+}
+
+.container2,
+.container3,
+.container4,
+.container5,
+.container6,
+.container7 {
+    position: absolute;
+    top: 0;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.header-text-2 {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    top: 0;
+}
+
+.input {
+    height: 8vh;
+    width: 18vw;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container i {
+    font-size: 2.5rem;
+    color: rgb(253, 253, 253);
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.container i:hover {
+    color: rgb(30, 141, 238);
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 450px) {
+    .input {
+        height: 6vh;
+        width: 18vw;
+        font-size: 1.2rem;
+        border: 1px solid black;
+        border-radius: 25px;
+        outline: none;
+        text-align: center;
+    }
+    .input-box {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .container i {
+        font-size: 2.3rem;
+        color: rgb(253, 253, 253);
+        border-radius: 50%;
+        border: 2px solid black;
+        position: absolute;
+        margin-left: 5px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+}
